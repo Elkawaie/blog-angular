@@ -1,3 +1,21 @@
-<p>
-  post-list-item-component works!
-</p>
+<li [ngClass]="{'list-group-item': true,
+'list-group-item-danger': PostLoveIts === 0,
+'list-group-item-success': PostLoveIts !== 0
+}">
+        <div class="row">
+          <h2>{{Posts.title}}</h2>
+          <p>{{Posts.created_at | date: 'short'}}</p>
+          
+        </div>
+        <div class="row">
+            <p>{{Posts.content}}</p>
+        </div>
+        <div class="row">
+            <button class="btn btn-success"
+            (click) = "onLove()">
+              I love Its
+            </button>
+            <button class="btn btn-danger"
+            (click) = "onDontLove()">I Dont love Its</button>
+        </div>
+</li>
