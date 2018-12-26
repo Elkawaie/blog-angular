@@ -26,13 +26,8 @@ export class PostListItemComponentComponent implements OnInit {
   }
 
   onDontLove(){
-    if(this.PostLoveIts >= 1){
-
       this.PostLoveIts --;
-    }else{
-      alert("Vous ne pouvez pas dislike plus");
-    }
-    
+
     return this.PostLoveIts;
   }
 }

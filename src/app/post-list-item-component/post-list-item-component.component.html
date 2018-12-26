@@ -1,6 +1,6 @@
 <li [ngClass]="{'list-group-item': true,
-'list-group-item-danger': PostLoveIts === 0,
-'list-group-item-success': PostLoveIts !== 0
+'list-group-item-danger': PostLoveIts < 0,
+'list-group-item-success': PostLoveIts > 0
 }">
         <div class="row">
           <h2>{{Posts.title}}</h2>
