@@ -20,7 +20,7 @@ export class PostListItemComponentComponent implements OnInit {
   }
 
   onLove(){
-    this.PostLoveIts = this.PostLoveIts + 1;
+    this.PostLoveIts ++;
     
     return this.PostLoveIts;
   }
@@ -28,7 +28,7 @@ export class PostListItemComponentComponent implements OnInit {
   onDontLove(){
     if(this.PostLoveIts >= 1){
 
-      this.PostLoveIts = this.PostLoveIts - 1;
+      this.PostLoveIts --;
     }else{
       alert("Vous ne pouvez pas dislike plus");
     }
