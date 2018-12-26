@@ -7,8 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blog-angular';
-  consigne ='Créer un systeme de like dislike qui change le background en fonction de. La valeur du nombre de like n\' a pas a etre sauvegarder en cas de rechargement de page'
-
+  
   posts = [
     {
       title: 'Mon premier Article',
